@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    font-size: 1em;
+}
+
+/* Header*/
+.header {
+    background-color: white;
+    color: black;
+    padding: 1.25em 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 75em; 
+    margin: 0 auto;
+    padding: 0 1.25em; 
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.logo a {
+    cursor: pointer;
+}
+
+.menu-links {
+    list-style: none;
+    display: flex;
+}
+
+.menu-links li {
+    margin-left: 1.25em;
+}
+
+.menu-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.125em; 
+    transition: color 0.3s ease, background-color 0.3s ease; 
+    padding: 0.5em 0.75em; 
+    border-radius: 5px; 
+}
+
+.menu-links a:hover {
+    color: white; 
+    background-color: black; 
+}
+
+/* Imagenes */
+.hero-image {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#logo-imagen {
+    height: 5em; 
+    width: 5em;
+    transition: transform 0.3s ease-in-out; 
+}
+
+#logo-imagen:hover{
+    transform: scale(1.1);
+}
+
+#imagen-principal {
+    height: 20em; 
+    width: 81em; 
+}
+
+#imagen-pan, #imagen-pastelitos, #imagen-tarta, #imagen-pastelitos2, #imagen-galletas, #imagen-bollo {
+    height: 20em; 
+    width: 20em; 
+    transition: transform 0.3s ease-in-out;
+}
+
+#imagen-pan:hover, 
+#imagen-pastelitos:hover, 
+#imagen-tarta:hover,
+#imagen-pastelitos2:hover,
+#imagen-galletas:hover,
+#imagen-bollo:hover {
+    transform: scale(1.1);
+}
+
+#imagen-nosotros{
+    height: 40em;
+    width: 40em;
+}
+
+/* Main contenido */
+.main-contenido {
+    max-width: 75em;
+    margin: 0 auto;
+    padding: 2.5em 1.25em; 
+}
+
+.servicios {
+    margin-bottom: 2.5em; 
+}
+
+.servicios h2 {
+    text-align: center;
+    margin-bottom: 1.25em;
+    font-size: 2.25em; 
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25em; 
+    grid-auto-rows: minmax(18,75em, auto); 
+}
+
+.servicios-card {
+    background: #f4f4f4;
+    padding: 1.25em; 
+    border-radius: 0.3125em;
+    text-align: center;
+}
+
+.servicios-card h3 {
+    margin-bottom: 0.625em; 
+    font-size: 1.5em; 
+}
+
+.servicios-card p {
+    font-size: 1em;
+}
+
+.abajo {
+    text-align: center;
+    padding: 2.5em 1.25em;
+    background: #f4f4f4;
+    border-radius: 0.3125em;
+}
+
+.abajo h2 {
+    margin-bottom: 1.25em; 
+    font-size: 2.25em; 
+}
+
+.abajo p {
+    font-size: 1.125em; 
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.25em 0; 
+    margin-top: 2.5em; 
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Formulario*/
+.contacto {
+    text-align: center;
+    padding: 2.5em 1.25em; 
+    background: #f4f4f4;
+    border-radius: 0.3125em;
+    max-width: 50em;
+    margin: 0 auto;
+}
+
+.contacto h2 {
+    margin-bottom: 1.25em; 
+    font-size: 2.25em;
+    font-family: 'Playfair Display', serif;
+}
+
+.contacto p {
+    font-size: 1.125em; 
+    margin-bottom: 1.5em; 
+}
+
+.contacto-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em; 
+}
+
+.form-grupo {
+    text-align: left;
+}
+
+.form-grupo label {
+    font-size: 1em; 
+    margin-bottom: 0.5em;
+    display: block;
+}
+
+.form-grupo input, .form-grupo textarea {
+    width: 100%;
+    padding: 0.75em; 
+    border: 1px solid #ccc;
+    border-radius: 0.5em; 
+    font-size: 1em;
+}
+
+.form-grupo textarea {
+    resize: vertical;
+}
+
+.cta-boton {
+    background: #ff6347;
+    color: white;
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 0.5em;
+    font-size: 1.125em; 
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.cta-boton:hover {
+    background: #e5533d;
+}
